@@ -18,7 +18,7 @@
 
         .topbar {
             background-color: #3cff00;
-            background-image: url(asset/img/unity.jpg);
+            background-image: url(asset/img/unity.gif);
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -178,7 +178,7 @@
     <!-- TOP BAR END -->
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="topbar" id="navbar">
         <button class="dropbtn flex items-center" onclick="toggleDropdown()">
             <a href="#" onclick="showSection('minecraft-hosting')">Minecraft Hosting</a> </button>
         <button class="dropbtn flex items-center" onclick="toggleDropdown()">
@@ -193,7 +193,7 @@
     <!-- End of Sidebar -->
 
     <div class="main-content" id="main-content">
-        <h2>Welcome to Lifesteal</h2>
+        <h2>Welcome to Unity Hosting Store</h2>
     </div>
 
     <!-- FOOTER START -->
@@ -357,6 +357,17 @@
                 <button class="bg-green-500 text-white px-3 py-1 rounded" onclick="redirectToDiscord()">Buy Now</button>
             </div>
         </div>
+        <div class="coin-item bg-white rounded-lg shadow p-4">
+            <h3 class="text-lg font-semibold mt-2">Custom Plan - 6</h3>
+            <ul class="text-zinc-500">
+                <li>Per gb - 70 npr/ 44 inr </li>
+                <li>100 % Cpu - 80 npr / 50 inr</li>
+                <li>10 Gb storage - 80 npr / 50 inr </li>
+            </ul>
+            <div class="flex items-center justify-between mt-3">
+                <button class="bg-green-500 text-white px-3 py-1 rounded" onclick="redirectToDiscord()">Buy Now</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -365,15 +376,7 @@
                     case 'vps-hosting':
                         content = `
                         <div class="coin-item bg-white rounded-lg shadow p-4">
-    <h3 class="text-lg font-semibold mt-2">32 Gigs Plan</h3>
-    <ul class="text-zinc-500">
-        <li>₹1600.00 INR</li>
-        <li>Cores: 8</li>
-        <li>RAM: 32GB</li>
-        <li>Port: Unlimited</li>
-        <li>Bandwidth: Unmetered</li>
-        <li>NVME SSD: 300GB (Highly Scalable)</li>
-    </ul>
+    <h3 class="text-lg font-semibold mt-2">Directly Contact to Discord to buy VPS.</h3>
     <div class="flex items-center justify-between mt-3">
         <button class="bg-green-500 text-white px-3 py-1 rounded" onclick="redirectToDiscord()">Buy Now</button>
     </div>
@@ -428,6 +431,13 @@
     <ul class="text-zinc-500">
         <li>₹450</li>
     </ul>
+    <div class="flex items-center justify-between mt-3">
+        <button class="bg-green-500 text-white px-3 py-1 rounded" onclick="redirectToDiscord()">Buy Now</button>
+    </div>
+</div>
+
+<div class="coin-item bg-white rounded-lg shadow p-4">
+    <h3 class="text-lg font-semibold mt-2">For Other domains Contact to discord</h3>
     <div class="flex items-center justify-between mt-3">
         <button class="bg-green-500 text-white px-3 py-1 rounded" onclick="redirectToDiscord()">Buy Now</button>
     </div>
