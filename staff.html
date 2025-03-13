@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .img {
+      width: 400px;
+      height: 400px;
+    }
+
+    #navbar {
+      background-color: #27272A;
+    }
+
+    .topbar {
+      background-color: #3cff00;
+      background-image: url(asset/img/unity.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+
+    }
+
+    .staff{
+        display: flex;
+        gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TOP BAR START -->
+  <div class="topbar">
+    <div class="container mx-auto px-4 py-2" id="navbar">
+      <div class="flex justify-between items-center text-white">
+        <div class="flex space-x-4">
+          <button id="copyButton"
+            class="bg-purple-700 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-purple-800 flex items-center">
+            <span>unityhosting.xyz</span>
+          </button>
+        </div>
+        <button class="bg-yellow-400 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-yellow-500 flex items-center">
+          <span><a href="https://discord.com/invite/PGTQUVVcsx">Join Our Discord</a></span>
+        </button>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex justify-between items-center">
+        <div class="img"></div>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 py-2" id="navbar">
+      <div class="flex justify-center items-center text-white">
+        <div class="flex space-x-4">
+          <button class="bg-purple-800 py-2 px-4 rounded-lg shadow-lg hover:bg-purple-900"><a
+              href="index.html">Home</a></button>
+              <div class="ml-4"> 
+                <button class="bg-yellow-400 text-white py-2 px-4 rounded-lg shadow-lg hover:bg-yellow-500 flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h13M3 11h13m-4 4h4" />
+                  </svg>
+                  <span><a href="store.html">Store</a></span>
+                </button>
+              </div>
+          <button class="bg-purple-800 py-2 px-4 rounded-lg shadow-lg hover:bg-purple-900"><a
+              href="staff.html">Staff</a></button>
+          <button class="bg-purple-800 py-2 px-4 rounded-lg shadow-lg hover:bg-purple-900"><a
+              href="rules.html">Rules</a></button>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+  </div>
+  <!-- TOP BAR END -->
+      <div class="p-6 space-y-4">
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Owner</h2>
+          <div class="flex space-x-4">
+            <div class="flex items-center space-x-2 bg-white p-2 rounded-lg shadow">
+              <img class="w-10 h-10 rounded-full" src="asset/img/diwash.jpg" alt="User Avatar">
+              <div>
+                <div class="font-semibold">Diwash</div>
+                <div class="text-sm text-zinc-500">Owner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Staff</h2>
+          <div class="flex space-x-4">
+            <div class="flex items-center space-x-2 bg-white p-2 rounded-lg shadow">
+              <img class="w-10 h-10 rounded-full" src="asset/img/ramit.jpg" alt="User Avatar">
+              <div>
+                <div class="font-semibold">Ramit</div>
+                <div class="text-sm text-zinc-500">Staff</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- FOOTER START -->
+      <div class="bg-zinc-800 text-white p-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
+          <div class="w-full md:w-1/3 p-4">
+            <h2 class="font-bold text-xl mb-4">ABOUT US</h2>
+            <p class="text-zinc-400">
+              UnityHosting is one of the Nepali Hosting , where user can buy hosting services at affordable price.
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 p-4">
+            <h2 class="font-bold text-xl mb-4">SUPPORT US</h2>
+            <p class="text-zinc-400 mb-4">
+              Support us by buing our different Hosting .
+            </p>
+            <button class="bg-yellow-400 text-zinc-800 px-4 py-2 rounded-lg font-bold"><a href="store.html">Visit
+                Store</a></button>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center border-t border-zinc-700 mt-4 pt-4">
+          <div class="w-full md:w-1/2 text-zinc-400 text-sm">
+            <p>Copyright © Sparkcodes 2025</p>
+          </div>
+          <div class="w-full md:w-1/2 text-right text-zinc-400 text-sm">
+            <p>DESIGNED BY <span class="font-bold">bhattprayas</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER END -->
+      <script>
+    document.getElementById('copyButton').addEventListener('click', function() {
+        var text = document.querySelector('#copyButton span').innerText;
+
+        var textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        
+        textarea.select();
+        
+        document.execCommand('copy');
+        
+        document.body.removeChild(textarea);
+        
+        alert('Copied to clipboard: ' + text);
+    });
+
+      </script>
+</body>
+</html>
